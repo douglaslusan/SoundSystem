@@ -19,10 +19,8 @@ namespace ScreenSound.Menus
             Banda banda = new Banda(nomeDaBanda);
             bandasRegistradas.Add(nomeDaBanda, banda);
 
-            //var client = new OpenAIAPI("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");
+            var client = new OpenAIAPI("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");
 
-            var client = new OpenAIAPI("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");
-            
             var chat = client.Chat.CreateConversation();
 
             chat.AppendSystemMessage($"Fale me sobre a banda {nomeDaBanda} com no maximo em um paragrafo");
