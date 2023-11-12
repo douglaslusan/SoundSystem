@@ -1,10 +1,12 @@
 ﻿using ScreenSound.Menus;
 using ScreenSound.Modelos;
+using OpenAI_API;
 
 internal class Program
 {
     private static void Main(string[] args)
     {
+
         Menu menu = new Menu();
 
         Banda ira = new Banda("Ira");

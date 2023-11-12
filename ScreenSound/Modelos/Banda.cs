@@ -26,6 +26,7 @@ namespace ScreenSound.Modelos
             }
         }
         public IReadOnlyCollection<Album> Albuns { get; }
+        public string? Resumo { get; set; }
 
         public void AdicionarAlbum(Album album)
         {
@@ -44,6 +45,8 @@ namespace ScreenSound.Modelos
             {
                 Console.WriteLine($"Álbum: {album.Nome} ({album.DuracaoTotal})");
             }
+            Console.WriteLine();
+            Console.WriteLine(Resumo);
         }
     }
 }
